@@ -6,6 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<style>
 		* {
 			box-sizing: border-box;
@@ -167,28 +168,7 @@
 		<div class="main">
 			<div id="home" style="display:block" class="tabcontent">
 
-
-				<h2>TITLE HEADING</h2>
-				<h5>Title description, Dec 7, 2017</h5>
-				<div class="fakeimg" style="height:200px;">Image</div>
-				<p>Some text..</p>
-				<p>
-					Sunt in culpa qui officia deserunt mollit anim id est laborum
-					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco.
-				</p>
-				<br />
-				<h2>TITLE HEADING</h2>
-				<h5>Title description, Sep 2, 2017</h5>
-				<div class="fakeimg" style="height:200px;">Image</div>
-				<p>Some text..</p>
-				<p>
-					Sunt in culpa qui officia deserunt mollit anim id est laborum
-					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco.
-				</p>
+				<a class="twitter-timeline" href="https://twitter.com/nesh710?ref_src=twsrc%5Etfw">Tweets by nesh710</a>
 			</div>
 			<div id="F1-Blog" style="display:none" class="tabcontent techblog">
 				<iframe src="https://neshandf1.blogspot.com/" title="Iframe Example"></iframe>
@@ -216,6 +196,16 @@
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
 }
 	</script>
 </body>
