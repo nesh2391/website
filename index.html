@@ -5,6 +5,7 @@
 	<title>Page Title</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 	<style>
 		* {
 			box-sizing: border-box;
@@ -101,6 +102,7 @@
 			padding: 0;
 			width: 100%;
 			height: 100%;
+
 		}
 
 		/* Fake image, just for this example */
@@ -113,6 +115,7 @@
 		iframe {
 			width: 100%;
 			height: 100%;
+			min-height: 500px;
 		}
 
 		/* Footer */
@@ -143,31 +146,23 @@
 
 <body>
 	<div class="header">
-		<h1>My Website</h1>
-		<p>A <b>responsive</b> website created by me.</p>
+		<h1>Neshant</h1>
+		<p>This is my personal website. A place where most of my internet activities can be found.</p>
 	</div>
 
 	<div class="navbar">
 		<a class="tablinks" onclick="openCity(event, 'home')">Home</a>
 		<a class="tablinks" onclick="openCity(event, 'F1-Blog')">F1</a>
 		<a class="tablinks" onclick="openCity(event, 'Tech-Blog')">Tech</a>
-		<a href="#" class="right">Link</a>
 
 	</div>
 
 	<div class="row">
 		<div class="side">
 			<h2>About Me</h2>
-			<h5>Photo of me:</h5>
-			<div class="fakeimg" style="height:200px;">Image</div>
-			<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-			<h3>More Text</h3>
-			<p>Lorem ipsum dolor sit ame.</p>
-			<div class="fakeimg" style="height:60px;">Image</div>
-			<br />
-			<div class="fakeimg" style="height:60px;">Image</div>
-			<br />
-			<div class="fakeimg" style="height:60px;">Image</div>
+			<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical"
+				data-theme="light" data-vanity="neshant-s-587bba60"><a class="LI-simple-link"
+					href='https://www.linkedin.com/in/neshant-s-587bba60?trk=profile-badge'>Neshant S</a></div>
 		</div>
 		<div class="main">
 			<div id="home" style="display:block" class="tabcontent">
@@ -195,9 +190,8 @@
 					exercitation ullamco.
 				</p>
 			</div>
-			<div id="F1-Blog" style="display:none" class="tabcontent">
-				<h3>Paris</h3>
-				<p>Paris is the capital of France this is extra text to observe the behaviour.</p>
+			<div id="F1-Blog" style="display:none" class="tabcontent techblog">
+				<iframe src="https://neshandf1.blogspot.com/" title="Iframe Example"></iframe>
 			</div>
 
 			<div id="Tech-Blog" style="display:none" class="tabcontent techblog">
